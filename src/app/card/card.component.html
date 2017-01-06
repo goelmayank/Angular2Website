@@ -1,11 +1,25 @@
 <div class="card">
     <div class="card-header">
         {{ header }}
+        <input #textbox type="text" [(ngModel)]="show">
+        <button id="card1" (click)="show = 'card1'">Card 1</button>
+        <button id="card2" (click)="show = 'card2'">Card 2</button>
+        <button id="card3" (click)="show = 'card3'">Card 3</button>
+        <button id="card4" (click)="show = 'card4'">Card 4</button>
     </div>
-
-    <!-- single slot transclusion here -->
-    <ng-content select=[card-body]></ng-content>
-
+    <ng-content select=[navigation]></ng-content>
+    <div *ngIf="show=='card1'">
+        <h4 class="card-title">Card 1</h4>
+    </div>
+    <div *ngIf="show=='card2'">
+        <h4 class="card-title">Card 2</h4>
+    </div>
+    <div *ngIf="show=='card3'">
+        <h4 class="card-title">Card 3</h4>
+    </div>
+    <div *ngIf="show=='card4'">
+        <h4 class="card-title">Card 4</h4>
+    </div>
     <div class="card-footer">
         {{ footer }}
     </div>

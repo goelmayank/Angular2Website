@@ -1,10 +1,21 @@
-<h1>Angular2 Website</h1>
-<app-card [header]="10" footer="ghas doh">
-    <!-- put your dynamic content here -->
-    <div class="card-block" card-body>
-        <h4 class="card-title">Content</h4>
-        <p class="card-text">line of text and</p>
-        <a href="#" class="btn btn-primary">button</a>
-      </div>
-      <!-- end dynamic content -->
+<app-card header="{{title}}" show="card1" footer="© 2016. All rights reserved">
+    <!--     <div *ngIf="card1" card-body>
+        <h4 class="card-title">Card 1</h4>
+    </div>
+    <div *ngIf="card2" card-body>
+        <h4 class="card-title">Card 2</h4>
+    </div>
+    <div *ngIf="card3" card-body>
+        <h4 class="card-title">Card 3</h4>
+    </div>
+    <div *ngIf="card4" card-body>
+        <h4 class="card-title">Card </h4>
+    </div> -->
 </app-card>
+<!-- <app-databinding></app-databinding> -->
+<!-- <app-lifecycle *ngIf="!delete" [bindable]="boundValue">
+    <p #boundContent>{{test}}</p>
+</app-lifecycle> -->
+<!-- <button (click)="delete = true">Click to Delete</button>
+<button (click)="test = 'Changed value'">Click to Change Content</button>
+<button (click)="boundValue = 2000">Click to Change Binding</button> -->

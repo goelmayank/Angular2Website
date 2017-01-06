@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-	title = 'app works!';
-
+	title = 'Angular 2 Website!';
+	// delete = false;
+ //  	test = 'Starting value';
+ //  	boundValue = 1000;
 }
